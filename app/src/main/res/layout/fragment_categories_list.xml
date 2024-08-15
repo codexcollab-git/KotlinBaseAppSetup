@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header_light"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.module.xmlview.categories.view.fragment.CategoriesListFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/color_primary_variant"
+        android:id="@+id/offline_ribbion"
+        android:paddingVertical="@dimen/_4sdp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/offline_ribbion_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_centerHorizontal="true"
+            android:text="@string/offline"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp" />
+
+        <TextView
+            android:layout_below="@id/offline_ribbion_txt"
+            android:id="@+id/last_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:elevation="0dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/last_category"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/offline_ribbion"
+        android:id="@+id/category_recycler"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:fabSize="normal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ic_arrows_rotate"
+        android:contentDescription="refresh" />
+</RelativeLayout>

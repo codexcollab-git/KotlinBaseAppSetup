@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/categoriesListFragment">
+
+    <fragment
+        android:id="@+id/categoriesListFragment"
+        android:name="com.lokesh.timesup.ui.module.xmlview.categories.view.fragment.CategoriesListFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_categories_list" >
+
+        <action
+            android:id="@+id/forward_categoriesListFragment_to_productListFragment"
+            app:destination="@id/productListFragment"
+            app:popUpToInclusive="true"
+            app:popUpToSaveState="true"
+            app:restoreState="true"
+
+            app:enterAnim="@anim/nav_slide_in_right_custom"
+            app:exitAnim="@anim/nav_slide_out_left_custom"
+            app:popExitAnim="@anim/nav_slide_out_right_custom"
+            app:popEnterAnim="@anim/nav_slide_in_left_custom" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.lokesh.timesup.ui.module.xmlview.products.view.ProductListFragment"
+        android:label="fragment_product_list"
+        tools:layout="@layout/fragment_product_list">
+
+        <action
+            android:id="@+id/forward_productListFragment_to_productInfoFragment"
+            app:destination="@id/productInfoFragment"
+            app:popUpToInclusive="true"
+            app:popUpToSaveState="true"
+            app:restoreState="true"
+
+            app:enterAnim="@anim/nav_slide_in_right_custom"
+            app:exitAnim="@anim/nav_slide_out_left_custom"
+            app:popExitAnim="@anim/nav_slide_out_right_custom"
+            app:popEnterAnim="@anim/nav_slide_in_left_custom" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productInfoFragment"
+        android:name="com.lokesh.timesup.ui.module.xmlview.products.view.ProductInfoFragment"
+        android:label="fragment_product_info"
+        tools:layout="@layout/fragment_product_info"/>
+</navigation>

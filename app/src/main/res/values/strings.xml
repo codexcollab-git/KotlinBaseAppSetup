@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">AppSetup</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id">default_notification_channel_id</string>
+    <string name="default_notification_channel_name">default_notification_channel</string>
+
+    <!-- API failures-->
+    <string name="error">Error</string>
+    <string name="activity_not_found">Activity Not Found.</string>
+    <string name="no_int_connection">No Internet Connection.</string>
+    <string name="parsing_error">Parsing Error</string>
+    <string name="slow_internet">Connection is slow</string>
+    <string name="api_not_found">404 Not Found.</string>
+    <string name="api_error">Oops, Something went wrong</string>
+    <string name="token_expired">Token Expired, Try sign in again.</string>
+    <string name="text_speech_error">Error occurred while converting text to speech.</string>
+    <string name="internal_server_error">Internal Server Error</string>
+    <string name="wrong_auth_token">Authentication credentials were not provided.</string>
+    <string name="api_device_issue">API Failed due to unknown reason, Try Again.</string>
+    <string name="could_not_reach_server">Could not reach to the servers</string>
+    <string name="socket_timeout_server">Timeout Alert: Your request took more time than usual to process.</string>
+    <string name="you_are_back_online">You are back online</string>
+    <string name="you_are_offline">Sorry! You are offline</string>
+    <string name="auth_error_logging_out">Authentication failed. Forcefully Logging out.</string>
+    <string name="online">You are Online</string>
+    <string name="offline">You are Offline</string>
+    <string name="last_category">Last Category : </string>
+    <string name="last_product">Last Product : </string>
+    <string name="dialog_done">Done</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_ok_small">Ok</string>
+
+    <!-- Permission Manage -->
+    <string name="go_to_settings">Enable</string>
+    <string name="dialog_continue">Continue</string>
+    <string name="dialog_go_to_setting">Settings</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="needs_camera_permission">We need to have Camera &amp; storage permissions to access and save your photos &amp; file.</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="press_back_to_exit">Press back again to exit</string>
+    <string name="permanently_denied_camera">Please go to setting to allow the Camera &amp; storage access permission.</string>
+    <string name="permanently_denied_notification">Please go to setting to allow Notification permission.</string>
+    <string name="needs_notification_permission">We need to have access of your notification permission, Please go to setting to allow Notification permission.</string>
+    <string name="pdf_not_found">PDF File Not Found, Try Later.</string>
+
+    <!-- Time -->
+    <string name="second">second</string>
+    <string name="seconds">seconds</string>
+    <string name="minutes">minutes</string>
+    <string name="minute">minute</string>
+    <string name="hours"><!--Hours-->hr (s)</string>
+    <string name="hour">hr</string>
+    <string name="years">Years</string>
+    <string name="months">Months</string>
+    <string name="week">week</string>
+    <string name="weeks">weeks</string>
+    <string name="day">Day</string>
+    <string name="days">Days</string>
+    <string name="ago">ago</string>
+    <string name="today">Today</string>
+</resources>

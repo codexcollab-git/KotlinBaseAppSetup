@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.AppSetup.Dark" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="background">@color/white</item>
+        <item name="colorPrimary">@color/color_primary_dark</item>
+        <item name="colorPrimaryVariant">@color/color_text_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/color_primary_light</item>
+        <item name="colorSecondaryVariant">@color/color_text_primary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Theme.AppSetup.Splash" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/color_text_dark</item>
+        <item name="colorPrimaryVariant">@color/color_text_dark</item>
+        <item name="colorOnPrimary">@color/color_text_dark</item>
+        <item name="colorSecondary">@color/color_primary_light</item>
+        <item name="colorSecondaryVariant">@color/color_text_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+    </style>
+
+    <style name="Theme.AppSetup.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@color/color_primary_light</item>
+        <item name="background">@color/color_primary_light</item>
+        <item name="colorPrimary">@color/color_primary_dark</item>
+        <item name="colorPrimaryVariant">@color/color_text_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/color_primary_light</item>
+        <item name="colorSecondaryVariant">@color/color_text_primary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorAccent">#0091BC</item>
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+    </style>
+
+    <style name="Theme.AppSetup.White" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="background">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/color_text_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/color_primary_light</item>
+        <item name="colorSecondaryVariant">@color/color_text_primary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="CustomDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/CustomDialogAnimation</item>
+        <item name="android:layout_marginStart">@dimen/_5sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_5sdp</item>
+        <item name="android:layout_marginVertical">@dimen/_20sdp</item>
+    </style>
+    <style name="CustomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_animation</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_animation</item>
+    </style>
+
+    <style name="CustomDialogFull" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/CustomDialogAnimation</item>
+    </style>
+</resources>

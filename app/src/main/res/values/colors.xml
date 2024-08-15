@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary_light">#002858</color>
+    <color name="color_primary_dark">#091C32</color>
+    <color name="color_primary_variant">#65A812</color>
+    <color name="color_primary_variant_light">#88b464</color>
+
+    <color name="color_primary_variant_faded">#2280b364</color>
+    <color name="color_text_primary">#ffffff</color>
+    <color name="color_text_dark">#002858</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_faded3">#22FFFFFF</color>
+    <color name="white_faded">#44FFFFFF</color>
+    <color name="white_faded2">#88FFFFFF</color>
+    <color name="white_faded4">#99FFFFFF</color>
+    <color name="error_red">#d44e53</color>
+    <color name="dark_red">#ff0000</color>
+    <color name="grey_text">#5c5c5c</color>
+    <color name="bottomsheet_color">#2A2A2A</color>
+    <color name="bottomsheet_dark_color">#1D1D1D</color>
+    <color name="black_dark">#1A1A1A</color>
+    <color name="grey">#B6B7B7</color>
+    <color name="transaction_ripple">#172638</color>
+    <color name="transaction_bg">#00142C</color>
+    <color name="transaction_date_head">#0F2A27</color>
+    <color name="header_light">#0C3952</color>
+    <color name="filter_bg">#00244F</color>
+    <color name="search_bg">#091C32</color>
+    <color name="grey_txt_color">#5c5c5c</color>
+    <color name="blue">#0E75DF</color>
+    <color name="csv_color">#A9AEB2</color>
+    <color name="yacht_head_blue">#55001023</color>
+    <color name="yacht_link_disable">#454f5b</color>
+
+    <color name="fontWhiteEnable">#FFF</color>
+    <color name="fontWhiteDisable">#85FFFFFF</color>
+    <color name="fontBlackEnable">#000000</color>
+    <color name="fontBlackDisable">#50000000</color>
+    <color name="dark_black_trans">#99000000</color>
+    <color name="delete_red">#B0090D</color>
+</resources>

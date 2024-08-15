@@ -1,0 +1,400 @@
+[versions]
+agp = "8.3.1"
+kotlin = "1.9.22"
+coreKtx = "1.12.0"
+archCoreKtx = "2.2.0"
+ktKsp = "1.9.23-1.0.19"
+
+ktTestAnnotation = "1.0.1"
+ktTestCore = "1.5.0"
+ktTestMonitor = "1.6.1"
+ktTestRules = "1.5.0"
+ktTestRunner = "1.5.2"
+ktJunit = "4.13.2"
+ktTestJunit = "1.1.5"
+ktTestEspresso = "3.5.1"
+ktTestUIAutomator = "2.3.0"
+ktTestTracing = "1.2.0"
+ktAnnotation = "1.7.1"
+ktAnnotationExperimental = "1.4.1"
+
+androidxLifecycle = "2.7.0"
+androidxActivity = "1.8.2"
+androidxFragment = "1.6.2"
+androidxCollection = "1.4.0"
+composeBom = "2024.03.00"
+ktNavigation = "2.7.7"
+ktWork = "2.9.0"
+coroutines = "1.8.0"
+hilt = "2.49"
+gson = "2.10.1"
+retrofit = "2.9.0"
+retrofitRXJava = "2.1.0"
+okhttp = "5.0.0-alpha.7"
+firebase = "32.8.0"
+ktRoom = "2.6.1"
+pixel = "1.1.1"
+playCore = "1.10.3"
+dexter = "6.2.3"
+coil = "2.6.0"
+dataStore = "1.0.0"
+glide = "4.13.1"
+
+googleServices = "4.4.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+constraintlayout = "2.1.4"
+ktlint = "11.1.0"
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kt-ksp = { id = "com.google.devtools.ksp", version.ref = "ktKsp" }
+kt-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin"  }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices"  }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt"  }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint"  }
+
+[libraries]
+# -- ktx-test --
+androidx-junit = { group = "junit", name = "junit", version.ref = "ktJunit" }
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+kotlin-test-junit = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit", version.ref = "kotlin" }
+androidx-test-junit = { group = "androidx.test.ext", name = "junit", version.ref = "ktTestJunit" }
+androidx-test-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "ktTestJunit" }
+androidx-test-espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "ktTestEspresso" }
+
+# -- ktx-test-additional --
+androidx-test-annotation = { group = "androidx.test", name = "annotation", version.ref = "ktTestAnnotation" }
+androidx-test-core = { group = "androidx.test", name = "core", version.ref = "ktTestCore" }
+androidx-test-core-ktx = { group = "androidx.test", name = "core-ktx", version.ref = "ktTestCore" }
+androidx-test-monitor = { group = "androidx.test", name = "monitor", version.ref = "ktTestMonitor" }
+androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "ktTestRules" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "ktTestRunner" }
+androidx-test-uiautomator = { group = "androidx.test.uiautomator", name = "uiautomator", version.ref = "ktTestUIAutomator" }
+androidx-tracing = { group = "androidx.tracing", name = "tracing", version.ref = "ktTestTracing" }
+androidx-tracing-ktx = { group = "androidx.tracing", name = "tracing-ktx", version.ref = "ktTestTracing" }
+
+# -- annotation --
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "ktAnnotation" }
+androidx-annotation-experimental = { group = "androidx.annotation", name = "annotation-experimental", version.ref = "ktAnnotationExperimental" }
+
+# -- core --
+androidx-core = { group = "androidx.core", name = "core", version.ref = "coreKtx" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+# -- arch-core --
+androidx-arch-core-common = { group = "androidx.arch.core", name = "core-common", version.ref = "archCoreKtx" }
+androidx-arch-core-runtime = { group = "androidx.arch.core", name = "core-runtime", version.ref = "archCoreKtx" }
+
+# -- activity --
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "androidxActivity" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "androidxActivity" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "androidxFragment" }
+
+# -- collection --
+androidx-collection = { group = "androidx.collection", name = "collection", version.ref = "androidxCollection" }
+androidx-collection-ktx = { group = "androidx.collection", name = "collection-ktx", version.ref = "androidxCollection" }
+
+# -- common --
+androidx-lifecycle-common = { group = "androidx.lifecycle", name = "lifecycle-common", version.ref = "androidxLifecycle" }
+androidx-lifecycle-common-java8 = { group = "androidx.lifecycle", name = "lifecycle-common-java8", version.ref = "androidxLifecycle" }
+
+# -- runtime --
+androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime", version.ref = "androidxLifecycle" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
+androidx-lifecycle-runtime-livadata = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+
+# -- lifecycle --
+androidx-lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata", version.ref = "androidxLifecycle" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-livedata-core = { group = "androidx.lifecycle", name = "lifecycle-livedata-core", version.ref = "androidxLifecycle" }
+androidx-lifecycle-livedata-core-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-core-ktx", version.ref = "androidxLifecycle" }
+
+# -- viewmodel --
+androidx-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewmodel-savedstate = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
+
+# -- compose-bom --
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+
+# -- compose-runtime --
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+androidx-compose-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata" }
+androidx-compose-runtime-saveable = { group = "androidx.compose.runtime", name = "runtime-saveable" }
+
+# -- compose-ui --
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-geometry = { group = "androidx.compose.ui", name = "ui-geometry" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-unit = { group = "androidx.compose.ui", name = "ui-unit" }
+androidx-compose-ui-util = { group = "androidx.compose.ui", name = "ui-util" }
+
+# -- compose-unit-test --
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-data = { group = "androidx.compose.ui", name = "ui-tooling-data" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-test-junit = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+
+# -- compose-graphics --
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-compose-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout" }
+androidx-compose-animation = { group = "androidx.compose.animation", name = "animation" }
+androidx-compose-animation-core = { group = "androidx.compose.animation", name = "animation-core" }
+androidx-compose-animation-graphics = { group = "androidx.compose.animation", name = "animation-graphics" }
+androidx-compose-material-icons-core = { group = "androidx.compose.material", name = "material-icons-core" }
+androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-compose-material-ripple = { group = "androidx.compose.material", name = "material-ripple" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material3-wsc = { group = "androidx.compose.material3", name = "material3-window-size-class" }
+
+# -- navigation --
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "ktNavigation" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "ktNavigation" }
+androidx-navigation-common = { group = "androidx.navigation", name = "navigation-common", version.ref = "ktNavigation" }
+androidx-navigation-common-ktx = { group = "androidx.navigation", name = "navigation-common-ktx", version.ref = "ktNavigation" }
+androidx-navigation-runtime = { group = "androidx.navigation", name = "navigation-runtime", version.ref = "ktNavigation" }
+androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "ktNavigation" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "ktNavigation" }
+androidx-navigation-test = { group = "androidx.navigation", name = "navigation-testing", version.ref = "ktNavigation" }
+
+# -- work-manager --
+androidx-work-runtime = { group = "androidx.work", name = "work-runtime", version.ref = "ktWork" }
+androidx-work-runtime-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "ktWork" }
+
+# -- ktlint --
+kotlin-ktlint = { group = "org.jlleitschuh.gradle", name = "ktlint-gradle", version.ref = "ktlint" }
+
+# -- coroutines --
+kotlin-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlin-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+
+# -- hilt --
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+
+# -- hilt-compiler --
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+
+# -- retrofit --
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+retrofit-converter-scalars = { group = "com.squareup.retrofit2", name = "converter-scalars", version.ref = "retrofit" }
+retrofit-rx-java = { group = "com.squareup.retrofit2", name = "adapter-rxjava", version.ref = "retrofitRXJava" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+
+# -- room --
+androidx-room = { group = "androidx.room", name = "room-runtime", version.ref = "ktRoom" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "ktRoom" }
+
+# -- room-compiler --
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "ktRoom" }
+
+# -- ui-pixels --
+pixel-sdp = { group = "com.intuit.sdp", name = "sdp-android", version.ref = "pixel" }
+pixel-ssp = { group = "com.intuit.ssp", name = "ssp-android", version.ref = "pixel" }
+
+# -- firebase-bom --
+firebase-bom  = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase" }
+
+# -- firebase-all --
+firebase-link = { group = "com.google.firebase", name = "firebase-dynamic-links-ktx" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging" }
+firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
+
+# -- play-store --
+play-core = { group = "com.google.android.play", name = "core", version.ref = "playCore" }
+
+# -- permission --
+permission-dexter = { group = "com.karumi", name = "dexter", version.ref = "dexter" }
+
+# -- glide --
+image-loading-glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+
+# -- glide-compiler --
+image-loading-glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+
+# -- datastore --
+androidx-datastore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "dataStore" }
+
+# -- coil --
+coil = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+coil-svg = { group = "io.coil-kt", name = "coil-svg", version.ref = "coil" }
+coil-gif = { group = "io.coil-kt", name = "coil-gif", version.ref = "coil" }
+coil-video = { group = "io.coil-kt", name = "coil-video", version.ref = "coil" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+[bundles]
+kotlin-test = [
+    "androidx-junit",
+    "kotlin-test",
+    "kotlin-test-junit",
+    "androidx-test-junit",
+    "androidx-test-junit-ktx",
+    "androidx-test-espresso"
+]
+
+kotlin-test-additional = [
+    "androidx-test-annotation",
+    "androidx-test-core",
+    "androidx-test-core-ktx",
+    "androidx-test-monitor",
+    "androidx-test-rules",
+    "androidx-test-runner",
+    "androidx-test-uiautomator",
+    "androidx-tracing",
+    "androidx-tracing-ktx"
+]
+
+androidx-annotation = [
+    "androidx-annotation",
+    "androidx-annotation-experimental"
+]
+
+androidx-core = [
+    "androidx-core",
+    "androidx-core-ktx"
+]
+
+androidx-arch-core = [
+    "androidx-arch-core-common",
+    "androidx-arch-core-runtime"
+]
+
+androidx-activity = [
+    "androidx-activity",
+    "androidx-activity-compose",
+    "androidx-activity-ktx",
+    "androidx-fragment-ktx"
+]
+
+androidx-collection = [
+    "androidx-collection",
+    "androidx-collection-ktx"
+]
+
+androidx-lifecycle-common = [
+    "androidx-lifecycle-common",
+    "androidx-lifecycle-common-java8"
+]
+
+androidx-lifecycle-runtime = [
+    "androidx-lifecycle-runtime",
+    "androidx-lifecycle-runtime-compose",
+    "androidx-lifecycle-runtime-livadata",
+    "androidx-lifecycle-runtime-ktx",
+]
+
+androidx-lifecycle-livedata = [
+    "androidx-lifecycle-livedata",
+    "androidx-lifecycle-livedata-ktx",
+    "androidx-lifecycle-livedata-core",
+    "androidx-lifecycle-livedata-core-ktx"
+]
+
+androidx-lifecycle-viewmodel = [
+    "androidx-lifecycle-viewmodel",
+    "androidx-lifecycle-viewmodel-savedstate",
+    "androidx-lifecycle-viewmodel-compose",
+    "androidx-lifecycle-viewmodel-ktx"
+]
+
+androidx-compose-test = [
+    "androidx-compose-ui-tooling",
+    "androidx-compose-ui-tooling-data",
+    "androidx-compose-ui-tooling-preview",
+    "androidx-compose-ui-test-junit",
+    "androidx-compose-ui-test-manifest"
+]
+
+androidx-compose-runtime = [
+    "androidx-compose-runtime",
+    "androidx-compose-runtime-livedata",
+    "androidx-compose-runtime-saveable"
+]
+
+androidx-compose-ui = [
+    "androidx-compose-ui",
+    "androidx-compose-ui-geometry",
+    "androidx-compose-ui-graphics",
+    "androidx-compose-ui-unit",
+    "androidx-compose-ui-util"
+]
+
+androidx-compose-graphics = [
+    "androidx-compose-foundation",
+    "androidx-compose-foundation-layout",
+    "androidx-compose-animation",
+    "androidx-compose-animation-core",
+    "androidx-compose-animation-graphics",
+    "androidx-compose-material-icons-core",
+    "androidx-compose-material-icons-extended",
+    "androidx-compose-material-ripple",
+    "androidx-compose-material3",
+    "androidx-compose-material3-wsc"
+]
+
+androidx-navigation = [
+    "androidx-navigation-fragment",
+    "androidx-navigation-ui",
+    "androidx-navigation-common",
+    "androidx-navigation-common-ktx",
+    "androidx-navigation-runtime",
+    "androidx-navigation-runtime-ktx",
+    "androidx-navigation-compose",
+    "androidx-navigation-test"
+]
+
+androidx-work = [
+    "androidx-work-runtime",
+    "androidx-work-runtime-ktx"
+]
+
+kotlin-coroutines = [
+    "kotlin-coroutines-core",
+    "kotlin-coroutines-android"
+]
+
+retrofit = [
+    "gson",
+    "retrofit",
+    "retrofit-converter-gson",
+    "retrofit-converter-scalars",
+    "retrofit-rx-java",
+    "okhttp",
+    "okhttp-logging-interceptor"
+]
+
+androidx-room = [
+    "androidx-room",
+    "androidx-room-ktx"
+]
+
+pixel = [
+    "pixel-ssp",
+    "pixel-sdp"
+]
+
+firebase-all = [
+    "firebase-link",
+    "firebase-messaging",
+    "firebase-analytics"
+]
+
+image-loading-coil = [
+    "coil",
+    "coil-compose",
+    "coil-svg",
+    "coil-gif",
+    "coil-video",
+]
