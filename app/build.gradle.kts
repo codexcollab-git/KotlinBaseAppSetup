@@ -156,9 +156,6 @@ dependencies {
     /** UI-Pixels */
     implementation(libs.bundles.pixel)
 
-    /** KT-Lint */
-    implementation(libs.bundles.ktlint)
-
     /** Firebase */
     implementation(platform(libs.firebase.bom))
     implementation(libs.bundles.firebase.all)
