@@ -184,7 +184,7 @@ class ProductListFragment : BaseFragment<FragmentProductListBinding>() {
 
     private fun backPress() {
         val bundle = Bundle()
-        bundle.putParcelable(BACK_CATEGORY_DATA, category)
+        bundle.putString(BACK_CATEGORY_DATA, category?.name ?: "")
         setFragmentResult(BACK_PRODUCT_LIST_TO_CATEGORY_LIST, bundle)
         findNavController().navigateUp()
     }
