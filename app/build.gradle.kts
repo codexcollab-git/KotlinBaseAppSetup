@@ -16,7 +16,7 @@ android {
 
     defaultConfig {
         applicationId = "com.lokesh.timesup"
-        minSdk = 21
+        minSdk = 24
         targetSdk = 34
         versionName = "1.0.0"
 
@@ -82,6 +82,7 @@ android {
     buildFeatures {
         compose = true
         viewBinding = true
+        dataBinding = true
         buildConfig = true
     }
     composeOptions {
