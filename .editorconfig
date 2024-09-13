@@ -1,8 +1,14 @@
 # This file is used in ktlint.
 # https://github.com/pinterest/ktlint#editorconfig
 # https://editorconfig.org
+
 root = true
 
-
 [*.{kt,kts}]
+indent_style = space
+indent_size = 4
 disabled_rules = final-newline,no-wildcard-imports
+max_line_length = 120
+
+[*.kts]
+indent_size = 4

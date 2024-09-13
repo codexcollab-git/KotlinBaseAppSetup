@@ -12,7 +12,7 @@ plugins {
   alias(libs.plugins.ktlint) apply false
   alias(libs.plugins.kt.ksp) apply false
   alias(libs.plugins.kt.parcelize) apply false
-  /*alias(libs.plugins.google.services) apply false*/
+  alias(libs.plugins.google.services) apply false
   alias(libs.plugins.hilt) apply false
 }
 

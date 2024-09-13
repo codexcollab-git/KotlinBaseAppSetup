@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.fir.declarations.builder.buildScript
-
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
@@ -11,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace = "com.lokesh.timesup"
+    namespace = "com.lokesh.appsetup"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.lokesh.timesup"
+        applicationId = "com.lokesh.appsetup"
         minSdk = 24
         targetSdk = 34
         versionName = "1.0.0"
@@ -26,17 +24,16 @@ android {
 
         buildConfigField("boolean", "IS_CURRENT_FLAVOUR_DEV", "false")
 
-        //Room Schema Builder
-        /*javaCompileOptions {
+        // Room Schema Builder
+        javaCompileOptions {
             annotationProcessorOptions {
                 arguments["room.schemaLocation"] = "$projectDir/schemas"
             }
-        }*/
+        }
     }
 
     buildTypes {
         debug {
-
         }
         release {
             isMinifyEnabled = false
@@ -45,7 +42,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            //signingConfig signingConfigs.release
+            // signingConfig signingConfigs.release
         }
     }
 
@@ -54,7 +51,7 @@ android {
 
     flavorDimensions += "version"
     productFlavors {
-        create("develop"){
+        create("develop") {
             dimension = "version"
             applicationIdSuffix = ".develop"
             versionNameSuffix = "-develop"
@@ -86,7 +83,7 @@ android {
         buildConfig = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.10"
+        kotlinCompilerExtensionVersion = "1.5.13"
     }
     packaging {
         resources {
@@ -95,9 +92,19 @@ android {
     }
 }
 
+ktlint {
+    android.set(true)
+    debug.set(true)
+    verbose.set(true)
+    ignoreFailures.set(true)
+    outputToConsole.set(true)
+    disabledRules.set(listOf("import-ordering", "final-newline", "no-wildcard-imports"))
+}
+
 dependencies {
     /** Core */
     implementation(libs.bundles.kotlin.test)
+    androidTestImplementation(libs.bundles.kotlin.test)
     implementation(libs.bundles.kotlin.test.additional)
     implementation(libs.bundles.androidx.core)
     implementation(libs.bundles.androidx.annotation)
@@ -148,6 +155,9 @@ dependencies {
 
     /** UI-Pixels */
     implementation(libs.bundles.pixel)
+
+    /** KT-Lint */
+    implementation(libs.bundles.ktlint)
 
     /** Firebase */
     implementation(platform(libs.firebase.bom))

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/categoriesListFragment"
-        android:name="com.lokesh.timesup.ui.module.xmlview.categories.view.fragment.CategoriesListFragment"
+        android:name="com.lokesh.appsetup.ui.module.xmlview.categories.view.fragment.CategoriesListFragment"
         android:label="Categories"
         tools:layout="@layout/fragment_categories_list" >
 
@@ -26,7 +26,7 @@
 
     <fragment
         android:id="@+id/productListFragment"
-        android:name="com.lokesh.timesup.ui.module.xmlview.products.view.ProductListFragment"
+        android:name="com.lokesh.appsetup.ui.module.xmlview.products.view.ProductListFragment"
         android:label="fragment_product_list"
         tools:layout="@layout/fragment_product_list">
 
@@ -45,7 +45,7 @@
 
     <fragment
         android:id="@+id/productInfoFragment"
-        android:name="com.lokesh.timesup.ui.module.xmlview.products.view.ProductInfoFragment"
+        android:name="com.lokesh.appsetup.ui.module.xmlview.products.view.ProductInfoFragment"
         android:label="fragment_product_info"
         tools:layout="@layout/fragment_product_info"/>
 </navigation>

@@ -1,51 +1,50 @@
 [versions]
-agp = "8.3.1"
-kotlin = "1.9.22"
-coreKtx = "1.12.0"
+agp = "8.3.2"
+kotlin = "1.9.23"
+coreKtx = "1.13.1"
 archCoreKtx = "2.2.0"
 ktKsp = "1.9.23-1.0.19"
 
 ktTestAnnotation = "1.0.1"
-ktTestCore = "1.5.0"
-ktTestMonitor = "1.6.1"
-ktTestRules = "1.5.0"
-ktTestRunner = "1.5.2"
+ktTestCore = "1.6.1"
+ktTestMonitor = "1.7.2"
+ktTestRules = "1.6.1"
+ktTestRunner = "1.6.2"
 ktJunit = "4.13.2"
-ktTestJunit = "1.1.5"
-ktTestEspresso = "3.5.1"
+ktTestJunit = "1.2.1"
+ktTestEspresso = "3.6.1"
 ktTestUIAutomator = "2.3.0"
 ktTestTracing = "1.2.0"
-ktAnnotation = "1.7.1"
+ktAnnotation = "1.8.2"
 ktAnnotationExperimental = "1.4.1"
 
-androidxLifecycle = "2.7.0"
-androidxActivity = "1.8.2"
-androidxFragment = "1.6.2"
-androidxCollection = "1.4.0"
-composeBom = "2024.03.00"
-ktNavigation = "2.7.7"
-ktWork = "2.9.0"
+androidxLifecycle = "2.8.5"
+androidxActivity = "1.9.2"
+androidxFragment = "1.8.3"
+androidxCollection = "1.4.3"
+composeBom = "2024.09.00"
+ktNavigation = "2.8.0"
+ktWork = "2.9.1"
 coroutines = "1.8.0"
 hilt = "2.49"
 gson = "2.10.1"
 retrofit = "2.9.0"
 retrofitRXJava = "2.1.0"
 okhttp = "5.0.0-alpha.7"
-firebase = "32.8.0"
+firebase = "33.2.0"
 ktRoom = "2.6.1"
 pixel = "1.1.1"
-playCore = "1.10.3"
+playCore = "2.1.0"
 dexter = "6.2.3"
 coil = "2.6.0"
-dataStore = "1.0.0"
+dataStore = "1.1.1"
 glide = "4.13.1"
 
-googleServices = "4.4.1"
-appcompat = "1.6.1"
-material = "1.11.0"
+googleServices = "4.4.2"
+appcompat = "1.7.0"
+material = "1.12.0"
 constraintlayout = "2.1.4"
-ktlint = "11.1.0"
-
+ktlint = "11.4.2"
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -210,7 +209,7 @@ firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging
 firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics-ktx" }
 
 # -- play-store --
-play-core = { group = "com.google.android.play", name = "core", version.ref = "playCore" }
+play-core = { group = "com.google.android.play", name = "app-update-ktx", version.ref = "playCore" }
 
 # -- permission --
 permission-dexter = { group = "com.karumi", name = "dexter", version.ref = "dexter" }
@@ -383,6 +382,10 @@ androidx-room = [
 pixel = [
     "pixel-ssp",
     "pixel-sdp"
+]
+
+ktlint = [
+    "kotlin-ktlint"
 ]
 
 firebase-all = [

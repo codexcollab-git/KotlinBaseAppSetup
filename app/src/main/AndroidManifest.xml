@@ -29,5 +29,4 @@
             android:label="@string/app_name"
             android:theme="@style/Theme.AppSetup.Dark"/>
     </application>
-
 </manifest>
