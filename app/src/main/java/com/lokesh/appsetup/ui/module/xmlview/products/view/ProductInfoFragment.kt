@@ -77,8 +77,7 @@ class ProductInfoFragment : BaseFragment<FragmentProductInfoBinding>() {
     private fun updateUI() {
         if (product != null) {
             Glide.with(requireContext()).load(product?.thumbnail).into(binding.image)
-            binding.heading.text = product?.title
-            binding.subHeading.text = product?.description
+            binding.product = product
         }
     }
 

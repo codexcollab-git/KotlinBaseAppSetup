@@ -22,10 +22,8 @@ class ProductsAdapter(private val context: Context, private val listener: ClickL
     override fun onBindView(holder: MyViewHolder<LayoutProductRowBinding>, position: Int) {
         super.onBindView(holder, position)
         val product = products[position]
-
         Glide.with(context).load(product.thumbnail).into(holder.binding.image)
-        holder.binding.heading.text = product.title
-        holder.binding.subHeading.text = product.description
+        holder.binding.product = product
         holder.binding.clickView onClick {
             listener.onClick(product)
         }

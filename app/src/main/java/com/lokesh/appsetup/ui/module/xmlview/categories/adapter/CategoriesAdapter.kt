@@ -21,7 +21,7 @@ class CategoriesAdapter(private val context: Context, private val listener: Clic
     override fun onBindView(holder: MyViewHolder<LayoutCategoryRowBinding>, position: Int) {
         super.onBindView(holder, position)
         val category = categories[position]
-        holder.binding.category.text = category.name
+        holder.binding.category = category
         holder.binding.categoryView onClick {
             listener.onClick(category)
         }
